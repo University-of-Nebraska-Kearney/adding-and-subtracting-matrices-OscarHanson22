@@ -63,9 +63,9 @@ def add_matrix(matrix1, matrix2):
 def get_matrix():
     """ Creates and returns a user-defined matrix. """
     print("How many rows?")
-    matrix_width = user_input_int(1, 10)
-    print("How many columns?")
     matrix_height = user_input_int(1, 10)
+    print("How many columns?")
+    matrix_width = user_input_int(1, 10)
     matrix = new_matrix(matrix_width, matrix_height)
     for (i, j) in matrix_positions(matrix_width, matrix_height):
         print(f"What value for position [{i+1}][{j+1}]?")
